@@ -3,85 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/black"
+    android:background="#151414"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentacion.MainActivity">
+    tools:context=".presentacion.MainActivity"
+    >
 
     <ImageView
-        android:id="@+id/act_logo_onvera"
+        android:id="@+id/imgViewLogo"
+        android:layout_width="198dp"
+        android:layout_height="225dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btnlogin"
         android:layout_width="200dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="50dp"
-        android:src="@mipmap/logo_onvera"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-
-    <EditText
-        android:id="@+id/act_inicio_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="@string/actinicio_user"
-        android:maxLength="8"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
-        android:layout_marginHorizontal="20dp"
+
+        android:text="Iniciar Sesion"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_logo_onvera" />
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword"
+        android:backgroundTint="@color/white"
+
+        android:textColor="#121212"
+        android:onClick="clickLogin"
+        />
+
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Registrarse"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnlogin"
+        android:textColor="#121212"
+        android:backgroundTint="@color/white"
+        android:onClick="clickRegister"
+        />
+
     <EditText
-        android:id="@+id/actinicio_access_password"
+        android:id="@+id/edtcorreo"
         android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberPassword"
-        android:hint="@string/actinicio_password"
-        android:textColor="@color/black"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:hint="Correo Electronico"
+        android:padding="10dp"
         android:background="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/act_inicio_usuario"/>
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewLogo"
+        android:layout_marginTop="50dp"
 
+        />
 
-    <Button
-        android:id="@+id/actincio_access_sesion"
+    <EditText
+        android:id="@+id/edtpassword"
         android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
-        android:text="@string/actiniciar_sesion"
-        android:layout_marginHorizontal="80dp"
-        android:layout_marginTop="80dp"
-        android:background="@color/black"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="22sp"
-        android:onClick="onClicVerificar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/actinicio_access_password"/>
 
-    <Button
-        android:id="@+id/actincio_access_registro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/actiniciar_registro"
-        android:layout_marginHorizontal="80dp"
-        android:layout_marginTop="80dp"
-        android:background="@color/Red"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="22sp"
-        android:fontFamily="sans-serif-medium"
-        android:onClick="onClicVerificar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/actincio_access_sesion"/>
+        app:layout_constraintTop_toBottomOf="@+id/edtcorreo" />
 
 
 
