@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProyectoOnvera_AS</string>
+
+    <string name="actinicio_user">user</string>
+    <string name="actinicio_password">password</string>
+    <string name="actiniciar_sesion">Iniciar Sesion</string>
+    <string name="actiniciar_registro">Registrarse</string>
+
+
+</resources>
