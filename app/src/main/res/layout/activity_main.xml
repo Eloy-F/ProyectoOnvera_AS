@@ -24,16 +24,14 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="60dp"
-
         android:text="Iniciar Sesion"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtpassword"
         android:backgroundTint="@color/white"
-
         android:textColor="#121212"
         android:onClick="clickLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password"
         />
 
 
@@ -54,13 +52,13 @@
         />
 
     <EditText
-        android:id="@+id/edtcorreo"
+        android:id="@+id/edt_correo"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:hint="Correo Electronico"
+        android:hint="@string/edt_Correo"
         android:padding="10dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +70,7 @@
         />
 
     <EditText
-        android:id="@+id/edtpassword"
+        android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
@@ -80,13 +78,13 @@
         android:background="@color/white"
         android:textColor="@color/black"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/edt_password"
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtcorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_correo" />
 
 
 
