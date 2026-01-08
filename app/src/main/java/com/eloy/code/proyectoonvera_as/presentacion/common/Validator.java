@@ -7,7 +7,6 @@ import java.text.SimpleDateFormat;
 public class Validator {
     private EditText editText;
     private String errorMessage;
-
     private Validator(EditText editText){
         this.editText=editText;
     }
@@ -23,10 +22,18 @@ public class Validator {
         }
         return this;
     }
+    public Validator isEmail(){
+        String value = editText.getText().toString().trim();
+        if(errorMessage == null &&
+        !android.util.Patterns.EMAIL_ADDRESS.matcher(value).matches()){
+            errorMessage = "Formato de correo no válido";
+        }
+        return this;
+    }
     public Validator length(int len){
         String value = editText.getText().toString().trim();
         if(errorMessage == null && value.length() !=len){
-            errorMessage="Debe tener"+ len+"caracteres";
+            errorMessage="Debe tener al menos "+ len +" caracteres";
         }
         return this;
     }

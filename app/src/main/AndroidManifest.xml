@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- 🔥 PERMISO OBLIGATORIO PARA RETROFIT / HTTP / HTTPS -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/circle_shape"
-        android:roundIcon="@drawable/icono_onvera"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/icono_onvera"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProyectoOnvera_AS">
+        android:theme="@style/Theme.ProyectoOnvera_AS"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity_cambioContrasena"
+            android:name=".presentacion.registro.RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_perfil"
+            android:name=".presentacion.peliculas.Activity_PeliculasVideo"
             android:exported="false" />
         <activity
-            android:name=".activity_categoriaAdultos"
+            android:name=".presentacion.perfil.PerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_categoriaNinos"
+            android:name=".presentacion.peliculas.Activity_PeliculasAdultos"
             android:exported="false" />
         <activity
-            android:name=".actividad_categoria_adultos"
+            android:name=".presentacion.peliculas.Activity_PeliculasNinos"
             android:exported="false" />
         <activity
-            android:name=".categoria_ninos"
+            android:name=".presentacion.reconocimiento.activity_Validacion"
             android:exported="false" />
         <activity
-            android:name=".activity_ListaCategoria"
+            android:name=".presentacion.Inicio.InicioActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name=".presentacion.password.CambioContrasenaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentacion.peliculas.activity_Peliculas"
+            android:exported="false" />
+        <activity
+            android:name=".presentacion.categorias.activity_ListaCategoria"
             android:exported="false" />
         <activity
             android:name=".presentacion.MainActivity"

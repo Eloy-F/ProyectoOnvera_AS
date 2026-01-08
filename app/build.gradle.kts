@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.eloy.code.proyectoonvera_as"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.eloy.code.proyectoonvera_as"
@@ -27,9 +25,10 @@ android {
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -40,16 +39,24 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.datastore.core)
 
+    // Retrofit + OkHttp
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.okhttp)
-    implementation(libs.recyclerview)
-    implementation(libs.animated.vector.drawable)
 
+    // RecyclerView (AndroidX)
+    implementation(libs.recyclerview)
+
+    // Lombok
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok.annotationProcessor)
 
+    implementation(libs.glide)
+    annotationProcessor(libs.glideCompiler)
+
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

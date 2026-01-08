@@ -3,10 +3,9 @@ package com.eloy.code.proyectoonvera_as.data.model;
 import lombok.Data;
 
 @Data
-public class Categoria {
-    private int idCategoria;
+public class Seccion {
+    private int idSeccion;
     private String nombre;
     private String descripcion;
     private String estado;
-    private String tipo;
 }

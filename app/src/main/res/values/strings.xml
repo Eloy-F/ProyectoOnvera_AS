@@ -4,10 +4,14 @@
 
     <string name="actiniciar_sesion">Iniciar Sesion</string>
     <string name="actiniciar_registro">Registrarse</string>
-    <string name="actiniciar_Categoria">Categorias</string>
-    <string name="actLista_adulto">Categoria Adultos</string>
-    <string name="actLista_niños">Categoria Niños</string>
+    <string name="actiniciar_categoria">Categorias</string>
+    <string name="actlista_adulto">Categoria Adultos</string>
+    <string name="actlista_ninos">Categoria Niños</string>
     <string name="actmain_lbl_titulo">Bienvenidos a ONVERA</string>
-    <string name="edt_Correo">Correo</string>
+    <string name="edt_correo">Correo</string>
     <string name="edt_password">Password</string>
+    <string name="cat_inicio_peliculas">Peliculas </string>
+    <string name="pel_adultos_peliculas">Peliculas para Adultos</string>
+    <string name="pel_ninos_peliculas">Peliculas para Niños</string>
+    <string name="perfil_nombre">Nombre Apellido</string>
 </resources>

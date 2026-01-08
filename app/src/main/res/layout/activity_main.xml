@@ -1,91 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:background="#151414"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".presentacion.MainActivity"
-    >
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".presentacion.perfil.PerfilActivity">
 
     <ImageView
-        android:id="@+id/imgViewLogo"
-        android:layout_width="198dp"
-        android:layout_height="225dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/actmain_ivm_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="555dp"
+        android:src="@drawable/logo_inicioonvera"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/logo"
-        android:layout_marginTop="40dp"/>
-
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="60dp"
-        android:text="Iniciar Sesion"
-        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/actmain_txt_titulo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/white"
-        android:textColor="#121212"
-        android:onClick="clickLogin"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password"
-        />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-
-    <Button
-        android:id="@+id/btnRegistro"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Registrarse"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnlogin"
-        android:textColor="#121212"
-        android:backgroundTint="@color/white"
-        android:onClick="clickRegister"
-        />
-
-    <EditText
-        android:id="@+id/edt_correo"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
+    <TextView
+        android:id="@+id/actmain_txt_titulo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="@string/edt_Correo"
-        android:padding="10dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/actmain_lbl_titulo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/actmain_ivm_logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgViewLogo"
-        android:layout_marginTop="50dp"
-
-        />
-
-    <EditText
-        android:id="@+id/edt_password"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:ems="10"
-        android:hint="@string/edt_password"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_correo" />
-
-
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

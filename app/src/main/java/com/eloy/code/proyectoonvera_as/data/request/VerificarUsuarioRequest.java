@@ -1,7 +1,5 @@
 package com.eloy.code.proyectoonvera_as.data.request;
 
-import java.util.Date;
-
 import lombok.Data;
 
 @Data

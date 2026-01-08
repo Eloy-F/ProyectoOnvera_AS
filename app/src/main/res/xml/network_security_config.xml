@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
+
+<!--aqui instanciamos la configuracion por la version
+Android bloquea HTTP por seguridad.
+network_security_config permite definir excepciones controladas
+para usar HTTP durante desarrollo-->
