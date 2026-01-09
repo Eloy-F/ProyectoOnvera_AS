@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".presentacion.reconocimiento.activity_Validacion">
 
-    <!-- Texto -->
+
     <TextView
         android:id="@+id/txtValidando"
         android:layout_width="wrap_content"

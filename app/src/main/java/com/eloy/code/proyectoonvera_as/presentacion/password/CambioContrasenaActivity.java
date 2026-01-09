@@ -54,7 +54,7 @@ public class CambioContrasenaActivity extends AppCompatActivity {
 
     private void cambiarPassword(String actual, String nueva) {
 
-        // Obtener token correctamente
+        // token correctamente
         String token = getSharedPreferences("auth", MODE_PRIVATE)
                 .getString("token", null);
 

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".presentacion.categorias.activity_ListaCategoria"
     android:background="#151414">
-    <!-- HEADER -->
+
         <ImageView
         android:id="@+id/logoperfil"
         android:layout_width="55dp"
@@ -34,7 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/logoperfil"/>
 
-    <!-- BOTONES -->
     <Button
         android:id="@+id/btnninos"
         android:layout_width="0dp"

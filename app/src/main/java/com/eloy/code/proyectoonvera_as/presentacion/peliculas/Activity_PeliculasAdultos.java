@@ -1,7 +1,9 @@
 package com.eloy.code.proyectoonvera_as.presentacion.peliculas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +15,7 @@ import com.eloy.code.proyectoonvera_as.data.api.RetrofitClient;
 import com.eloy.code.proyectoonvera_as.data.common.BaseResponse;
 
 import com.eloy.code.proyectoonvera_as.R;
+import com.eloy.code.proyectoonvera_as.presentacion.categorias.activity_ListaCategoria;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,20 +27,23 @@ import retrofit2.Response;
 public class Activity_PeliculasAdultos extends AppCompatActivity {
     private RecyclerView rvPeliculas;
     private PeliculaAdultoAdapter adapter;
-    private List<Pelicula> peliculas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peliculas_adultos);
 
-        rvPeliculas = findViewById(R.id.rvPeliculas);//call xml
+        rvPeliculas = findViewById(R.id.rvPeliculas);//llamo al xml
         rvPeliculas.setLayoutManager(new GridLayoutManager(this, 2));
         rvPeliculas.setHasFixedSize(true);
         rvPeliculas.setItemViewCacheSize(20);
-
+        Button btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> finish());
       cargarPeliculasAdultos();
+
     }
+
+
     private void cargarPeliculasAdultos() {
         PeliculaApi api = RetrofitClient
                 .getRetrofit(this)
@@ -66,6 +72,7 @@ public class Activity_PeliculasAdultos extends AppCompatActivity {
                     }
                 });
     }
+
 
 
 }

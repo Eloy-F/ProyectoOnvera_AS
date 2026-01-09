@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".presentacion.peliculas.activity_Peliculas">
 
-    <!-- FILA 1 -->
+
     <ImageView
         android:id="@+id/image1"
         android:layout_width="120dp"
@@ -28,7 +28,6 @@
         android:layout_marginEnd="32dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <!-- FILA 2 -->
     <ImageView
         android:id="@+id/image3"
         android:layout_width="120dp"
@@ -47,7 +46,6 @@
         android:layout_marginTop="24dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <!-- FILA 3 -->
     <ImageView
         android:id="@+id/image5"
         android:layout_width="120dp"
@@ -66,7 +64,6 @@
         android:layout_marginTop="24dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <!-- TEXTO -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"

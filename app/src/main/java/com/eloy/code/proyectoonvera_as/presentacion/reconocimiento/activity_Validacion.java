@@ -28,7 +28,7 @@ public class activity_Validacion extends AppCompatActivity {
             return insets;
         });
 
-        // Redirección a categorías después de 3 segundos
+        // Redirección a categorías después de 2 segundos
         goToCategoriaVigentes();
     }
     private void goToCategoriaVigentes() {
@@ -36,7 +36,7 @@ public class activity_Validacion extends AppCompatActivity {
             Intent intent = new Intent(this,InicioActivity.class);
             startActivity(intent);
             finish();
-        }, 3000);
+        }, 2000);
     }
 
 

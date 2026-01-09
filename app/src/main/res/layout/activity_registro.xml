@@ -8,7 +8,6 @@
     android:background="#151414"
     tools:context=".presentacion.registro.RegistroActivity">
 
-    <!-- LOGO -->
     <ImageView
         android:id="@+id/imgLogoRegistro"
         android:layout_width="160dp"
@@ -19,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- NOMBRES -->
     <EditText
         android:id="@+id/edtNombres"
         android:layout_width="0dp"
@@ -34,7 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- APELLIDOS -->
     <EditText
         android:id="@+id/edtApellidos"
         android:layout_width="0dp"
@@ -49,7 +46,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- CORREO -->
     <EditText
         android:id="@+id/edtCorreo"
         android:layout_width="0dp"
@@ -65,7 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- CELULAR -->
     <EditText
         android:id="@+id/edtCelular"
         android:layout_width="0dp"
@@ -81,7 +76,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- PASSWORD -->
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="0dp"
@@ -97,7 +91,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- BOTÓN REGISTRAR -->
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="0dp"
@@ -113,7 +106,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- VOLVER A LOGIN -->
     <TextView
         android:id="@+id/txtVolverLogin"
         android:layout_width="wrap_content"

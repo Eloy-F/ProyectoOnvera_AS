@@ -40,16 +40,20 @@ public class PeliculaAdultoAdapter extends RecyclerView.Adapter<PeliculaAdultoAd
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pelicula pelicula = peliculas.get(position);
-
         holder.txtTitulo.setText(pelicula.getTitulo());
+        String img = pelicula.getImagenUrl();
+
+        System.out.println("IMG RAW = " + img);
+        String url = "http://10.0.2.2:3000" + img;
+        System.out.println("IMG FINAL = " + url);
 
         Glide.with(context)
-                .load(pelicula.getImagenUrl())
+                .load(url)
                 .placeholder(R.drawable.ic_launcher_foreground)
                 .error(R.drawable.ic_launcher_foreground)
                 .into(holder.imgPelicula);
 
-        //aqui renderizamos la ruta de YOUTUBE
+        //aqui renderizamos la ruta de YouTube
         holder.itemView.setOnClickListener(v -> {
             if (pelicula.getVideoUrl() == null || pelicula.getVideoUrl().isEmpty()) {
                 Toast.makeText(context, "Video no disponible", Toast.LENGTH_SHORT).show();

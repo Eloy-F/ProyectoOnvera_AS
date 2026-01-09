@@ -14,6 +14,9 @@ import com.eloy.code.proyectoonvera_as.presentacion.peliculas.Activity_Peliculas
 import com.eloy.code.proyectoonvera_as.presentacion.peliculas.Activity_PeliculasNinos;
 
 import com.eloy.code.proyectoonvera_as.R;
+import com.eloy.code.proyectoonvera_as.presentacion.perfil.PerfilActivity;
+
+import lombok.val;
 
 public class activity_ListaCategoria extends AppCompatActivity {
 
@@ -30,10 +33,10 @@ public class activity_ListaCategoria extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        // 🔹 Referencia al botón
+
         btnAdultos = findViewById(R.id.btnadultos);
         btnNinos = findViewById(R.id.btnninos);
-        // 🔹 Evento click
+
         btnAdultos.setOnClickListener(v -> {
             Intent intent = new Intent(activity_ListaCategoria
                     .this,Activity_PeliculasAdultos.class
@@ -47,15 +50,16 @@ public class activity_ListaCategoria extends AppCompatActivity {
             );
             startActivity(intent);
         });
-          //imagen de perfil
+
         ImageView logoperfil = findViewById(R.id.logoperfil);
 
         logoperfil.setOnClickListener(v -> {
-            Intent intent = new Intent(
-                    activity_ListaCategoria.this,
+            Intent intent = new Intent(activity_ListaCategoria.this,
                     com.eloy.code.proyectoonvera_as.presentacion.perfil.PerfilActivity.class
             );
             startActivity(intent);
         });
+
     }
+
 }

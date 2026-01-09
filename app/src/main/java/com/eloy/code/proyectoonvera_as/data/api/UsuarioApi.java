@@ -26,7 +26,7 @@ public interface UsuarioApi {
     Call<BaseResponse<Boolean>> registrarUsuario(
             @Body RegistroUsuarioRequest request
     );
-    @GET("perfiles/personal")
+    @GET("perfil/personal")
     Call<BaseResponse<PerfilUsuario>> obtenerMiPerfil();
     @PUT("usuarios/password")
     Call<BaseResponse<Boolean>> cambiarPassword(

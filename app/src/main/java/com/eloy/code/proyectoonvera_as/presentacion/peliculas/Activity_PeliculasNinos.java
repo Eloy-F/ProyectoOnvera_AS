@@ -2,6 +2,7 @@ package com.eloy.code.proyectoonvera_as.presentacion.peliculas;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,7 +37,8 @@ public class Activity_PeliculasNinos extends AppCompatActivity {
         rvPeliculas = findViewById(R.id.rvPeliculasN);//N de niños
         rvPeliculas.setLayoutManager(new GridLayoutManager(this, 2));
         rvPeliculas.setHasFixedSize(true);
-
+        Button btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> finish());
         cargarPeliculasNinos();
     }
 

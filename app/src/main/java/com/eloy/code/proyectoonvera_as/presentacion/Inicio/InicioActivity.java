@@ -74,14 +74,12 @@ public class InicioActivity extends AppCompatActivity {
                         .edit()
                         .putString("token", token)
                         .apply();
-
                 Toast.makeText(
                         this,
                         "Bienvenido " + p.getNombres() + " a ONVERA",
                         Toast.LENGTH_LONG
                 ).show();
 
-                //Intent*/
                 Intent intent=new Intent(this, activity_ListaCategoria.class);
                 startActivity(intent);
                 finish();

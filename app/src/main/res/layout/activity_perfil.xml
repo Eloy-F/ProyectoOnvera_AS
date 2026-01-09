@@ -35,7 +35,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- CORREO -->
     <TextView
         android:id="@+id/txtCorreo"
         android:layout_width="wrap_content"
@@ -46,7 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- TELÉFONO -->
     <TextView
         android:id="@+id/txtTelefono"
         android:layout_width="wrap_content"
@@ -57,7 +55,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- CERRAR SESIÓN -->
     <Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="0dp"
